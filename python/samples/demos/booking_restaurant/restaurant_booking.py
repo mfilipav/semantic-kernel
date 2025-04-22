@@ -34,7 +34,8 @@ client_id = booking_sample_settings.client_id
 client_secret = booking_sample_settings.client_secret
 client_secret_credential = ClientSecretCredential(tenant_id=tenant_id, client_id=client_id, client_secret=client_secret)
 
-graph_client = GraphServiceClient(credentials=client_secret_credential, scopes=["https://graph.microsoft.com/.default"])
+graph_client = GraphServiceClient(
+    credentials=client_secret_credential, scopes=["https://graph.microsoft.com/.default"])
 
 booking_business_id = booking_sample_settings.business_id
 booking_service_id = booking_sample_settings.service_id
